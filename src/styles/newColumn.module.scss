@@ -1,0 +1,18 @@
+.newColumn {
+  margin-top: 37px;
+  margin-left: 1.5rem;
+
+  min-width: 280px;
+  background: var(--newcolumn);
+
+  border-radius: 4px;
+  color: #828fa3;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+}

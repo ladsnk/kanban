@@ -1,0 +1,15 @@
+.board {
+  padding: 1.5rem;
+
+  display: flex;
+  min-height: calc(100vh - var(--nav-height));
+}
+
+.list {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.check {
+  overflow: auto;
+}

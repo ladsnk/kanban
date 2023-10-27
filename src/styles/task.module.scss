@@ -1,0 +1,32 @@
+.item {
+  margin-bottom: 20px;
+}
+
+.task {
+  background-color: var(--bg-header);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(54, 78, 126, 0.102);
+  padding: 1rem;
+  max-width: 280px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  cursor: pointer;
+  z-index: -1;
+
+  &:hover .title {
+    color: #635fc7;
+  }
+}
+
+.title {
+  transition: 0.3s;
+
+  color: var(--text);
+  font-size: 1rem;
+}
+
+.subtasks {
+  font-weight: 600;
+  color: #828fa3;
+  font-size: 0.8rem;
+}

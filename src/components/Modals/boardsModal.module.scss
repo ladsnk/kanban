@@ -1,0 +1,22 @@
+.boards-container {
+  padding: 1rem 0;
+
+  position: absolute;
+  top: 105%;
+  left: 100%;
+  width: 275px;
+
+  background-color: var(--bg-header);
+  box-shadow: rgba(0, 0, 0, 0.1) 2px 4px 12px;
+  border-radius: 0.5rem;
+
+  z-index: 9;
+}
+
+@media screen and (max-width: 575px) {
+  .boards-container {
+    top: 150%;
+    left: 0;
+    width: 245px;
+  }
+}

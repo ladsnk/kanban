@@ -1,0 +1,33 @@
+.subTask {
+  margin-top: 1rem;
+  padding: 0.5rem;
+
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: var(--bg);
+  border-radius: 4px;
+  transition: 0.3s;
+
+  &:hover {
+    background-color: #827fc5;
+    color: white;
+  }
+}
+
+.active {
+  .title {
+    color: #635fc7;
+  }
+}
+
+.checkbox {
+  accent-color: #635fc7;
+  min-height: 16px;
+  min-width: 16px;
+}
+
+.title {
+  color: var(--text);
+  font-size: 15px;
+}

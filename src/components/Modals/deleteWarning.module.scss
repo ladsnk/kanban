@@ -1,0 +1,21 @@
+.header {
+  color: #ea5555;
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+  button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.redBtn {
+  background-color: #ea5555;
+}
+.cancelBtn {
+  color: #635fc7;
+  background-color: var(--text);
+}

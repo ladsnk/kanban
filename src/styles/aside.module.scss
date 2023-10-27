@@ -1,0 +1,81 @@
+.helper {
+  min-width: var(--aside-width);
+}
+
+.aside {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  bottom: 0;
+}
+
+.asideActive {
+  min-width: var(--aside-width);
+  background-color: var(--bg-header);
+  border-right: 2px solid var(--grayish);
+  height: calc(100vh - var(--nav-height));
+}
+
+.asideContent {
+  display: flex;
+  flex-direction: column;
+
+  height: 100%;
+}
+
+.hider {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+
+  overflow: hidden;
+  display: flex;
+  border-radius: 0 100px 100px 0;
+  color: #828fa3;
+  cursor: pointer;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.6rem 1rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  min-height: 45.2px;
+  width: 90%;
+  transition: width 0.3s ease;
+  white-space: nowrap;
+
+  .eye {
+    min-width: 18px;
+  }
+
+  &:hover {
+    background: #fff;
+    color: #635fc7;
+  }
+}
+.closed {
+  min-width: 50px;
+}
+
+.board {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.7rem 1rem;
+  font-size: 0.95rem;
+  cursor: pointer;
+  color: #828fa3;
+  font-weight: 700;
+  width: 90%;
+}
+
+.active-board {
+  background-color: #635fc7;
+  color: white;
+  border-radius: 0rem 1rem 1rem 0rem;
+}
+
+@media screen and (max-width: 1150px) {
+  .aside,
+  .helper {
+    display: none;
+  }
+}
